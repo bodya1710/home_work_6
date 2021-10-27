@@ -1,0 +1,43 @@
+@media screen and (max-width: 940px){
+    .nav_burger{
+        display: flex;
+    }
+    .nav_burger span:nth-child(2) {
+        top: 50%;
+        margin-top: -2.5px;
+    }
+    .nav_burger span:last-child {
+        top: auto;
+        bottom: 0px;
+    }
+    .nav_row{
+        display: none;
+    }
+    .card_box .wrapper{
+        flex-wrap: wrap;
+    }
+    .card_item{
+        flex: 1 0 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .header_title h1{
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .header_title h1 span{
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .header_title p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .header_title p:before,
+    .header_title p:after{
+        display: none;
+    }
+    .wrap_btn{
+        margin-top: 20px;
+    }
+}

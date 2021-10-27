@@ -1,0 +1,237 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+*{
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  /*font-family: 'Roboto', sans-serif;*!*/
+  font-family: 'Tinos', serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header{
+  background: url("/image/bg.png") center no-repeat ;
+  background-size: cover;
+  height: 90vh;
+  padding-top: 50px;
+}
+.header .wrapper{
+  height: 100%;
+}
+.header_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_logo{
+  height: 67px;
+}
+.nav_row{
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+}
+.nav_menu{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.nav_menu_item a{
+  color:#FFFFFF ;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav_element{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.nav_element_shoping_icon{
+  flex-grow: 1;
+  width: 34px;
+  height: 50px;
+  border-right: 1px solid #FFFFFF;
+}
+.nav_element_shoping_icon img{
+  width: 60%;
+  height: 80%;
+}
+.nav_element_contact{
+  flex-grow: 2;
+  width: 154px;
+  color: #FFFFFF;
+  font-size:14px;
+  font-weight: 400;
+}
+.nav_element_contact a{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav_element_contact a:before{
+  content: url("/image/phone.png");
+}
+.nav_element_button{
+  flex-grow: 2;
+}
+.nav_burger{
+  display: none;
+  top: 0px;
+  right: 10px;
+  width: 50px;
+  height: 38px;
+  cursor: pointer;
+  position: relative;
+}
+.nav_burger span{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #FF7400;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  transition: all .3s;
+
+}
+
+.btn{
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 14px 19px;
+  background-color:#FF7400;
+}
+.header_main{
+  display: flex;
+  height: calc(100% - 71px);
+  align-items: center;
+}
+.header_title {
+  max-width: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.header_title h1{
+  font-size: 50px;
+  color: #D67E35;
+  text-align: center;
+}
+.header_title h1 span{
+  font-size: 80px;
+  line-height: 92px;
+
+ }
+.header_title p{
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.header_title p:before,
+.header_title p:after{
+  content: '';
+  display: block;
+  background-color: #FFFFFF;
+  width: 60px;
+  height: 2px;
+}
+.header_title p:before{
+  margin-right: 10px;
+}
+.header_title p:after{
+  margin-left: 10px;
+}
+.wrap_btn .btn{
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card_box{
+  background-color: #E5E5E5;
+}
+.card_box .wrapper{
+  display: flex;
+  column-gap: 30px;
+  position: relative;
+  top: -50px;
+  row-gap: 30px;
+}
+.card_item{
+  flex: 1 0 calc(33% - 60px);
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  padding: 40px 25px 20px 25px;
+
+}
+.card_item p,
+.card_item h2{
+  font-size: 26px;
+  line-height: 30px;
+  color: #656363;
+  text-align: center;
+}
+.card_item h2{
+  color: #2C2C2C;
+}
+.card_item h2 span{
+  color: #BC9060;
+}
